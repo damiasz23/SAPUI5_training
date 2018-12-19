@@ -1,14 +1,35 @@
 <core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
-		controllerName="ui5_test.UI5_test" xmlns:html="http://www.w3.org/1999/xhtml">
+		controllerName="ui5_test.UI5_test" xmlns:html="http://www.w3.org/1999/xhtml"
+		xmlns:l="sap.ui.layout"
+  		xmlns:s="sap.suite.ui.commons">
+		
 	<Page title="MJ">
 		<content>
-		<Button text="Siemanko" press="onShowText"></Button>
+		<Button text="Question" press="onShowText"></Button>
+		<Label text="Answer" class="sapUiSmallMargin" />
+		
+      	<Input id="answer" value="{/firstName}" valueLiveUpdate="true" width="200px" enabled="{/enabled}" placeholder="Name" />
+  		<Button text="Check" press="checkAnswer"></Button>
 		<Carousel id="test" pageChanged="onPageChanged">
 		<pages>
-			<Image src="http://www.guinnessworldrecords.com/Images/Michael-Jordan-main_tcm25-15662.jpg"
-				height="600px" id="pass"/>
-			<Image		src="https://i.imgur.com/nR0KiXI.gif"
-				height="600px" id="dunk"/>
+			<Image src="https://i.imgur.com/nR0KiXI.gif"
+				height="400px" id="michael"/>
+			<Image		src="https://i.giphy.com/RMutdUvwSPHjO.gif"
+				height="400px" id="larry"/>
+			<Image		src="https://media.giphy.com/media/3o7TKwBiaPbVVcdIuk/giphy.gif"
+				height="400px" id="kobe"/>
+			<Image		src="https://media.giphy.com/media/9AIzzqYdrufSXlQTOy/giphy.gif"
+				height="400px" id="luka"/>
+			<Image		src="https://thumbs.gfycat.com/GoodElatedFoxhound-size_restricted.gif"
+				height="400px" id="denis"/>
+			<Image		src="https://media.giphy.com/media/26BRFtHYP69pcI1ag/giphy.gif"
+				height="400px" id="shaq"/>
+			<Image		src="https://media.giphy.com/media/aEmQeq9vbC9Nu/200.gif"
+				height="400px" id="scottie"/>
+			<Image		src="https://media1.tenor.com/images/788d1031fcf67461016977917b878d4b/tenor.gif?itemid=9077822"
+				height="400px" id="kevin"/>
+			<Image		src="https://allucanheat.com/wp-content/blogs.dir/115/files/2013/06/LeBronBlocksSplitterSide.gif"
+				height="400px" id="lebrone"/>
 		</pages>
 	</Carousel>
 	
