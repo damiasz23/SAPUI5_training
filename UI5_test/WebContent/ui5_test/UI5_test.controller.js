@@ -1,4 +1,6 @@
 sap.ui.controller("ui5_test.UI5_test", {
+	
+	
 
 /**
 * Called when a controller is instantiated and its View controls (if available) are already created.
@@ -17,7 +19,36 @@ sap.ui.controller("ui5_test.UI5_test", {
 //	onBeforeRendering: function() {
 //
 //	},
-
+	
+	onShowText : function(oEvent) {
+		
+		var oDunk = this.getView().byId("dunk");
+		var oPass = this.getView().byId("pass");
+		var oCarusel = this.getView().byId("test");
+		var activePage = oCarusel.getActivePage();
+		
+		if(oDunk.sId === activePage){
+			alert("MJ leci jak ptak");
+		}else if(oPass.sId === activePage){
+			alert("MJ dyrygent");//		
+			
+		}
+	},
+	
+	onPageChanged : function(oEvent) {
+		
+		var oDunk = this.getView().byId("dunk");
+		var oPass = this.getView().byId("pass");
+		var activePage = oEvent.getSource().getActivePage();
+		
+		
+		if(oDunk.sId === activePage ){
+			alert("MJ leci jak ptak");
+		}else if(oPass.sId === activePage){
+			alert("MJ dyrygent");
+			
+		}
+	},
 /**
 * Called when the View has been rendered (so its HTML is part of the document). Post-rendering manipulations of the HTML could be done here.
 * This hook is the same one that SAPUI5 controls get after being rendered.
@@ -36,3 +67,4 @@ sap.ui.controller("ui5_test.UI5_test", {
 //	}
 
 });
+

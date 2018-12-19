@@ -1,9 +1,9 @@
 <core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
 		controllerName="ui5_test.UI5_test" xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Title">
+	<Page title="MJ">
 		<content>
-		<Button text="Siemanko" press="onShowtext"></Button>
-		<Carousel>
+		<Button text="Siemanko" press="onShowText"></Button>
+		<Carousel id="test" pageChanged="onPageChanged">
 		<pages>
 			<Image src="http://www.guinnessworldrecords.com/Images/Michael-Jordan-main_tcm25-15662.jpg"
 				height="600px" id="pass"/>
