@@ -1,0 +1,17 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="ui5_test.UI5_test" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+		<Button text="Siemanko" press="onShowtext"></Button>
+		<Carousel>
+		<pages>
+			<Image src="http://www.guinnessworldrecords.com/Images/Michael-Jordan-main_tcm25-15662.jpg"
+				height="600px" id="pass"/>
+			<Image		src="https://i.imgur.com/nR0KiXI.gif"
+				height="600px" id="dunk"/>
+		</pages>
+	</Carousel>
+	
+		</content>
+	</Page>
+</core:View>
